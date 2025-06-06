@@ -1,0 +1,79 @@
+.city-form {
+    margin: 20px;
+}
+
+#city-input {
+    padding: 8px;
+    width: 350px;
+}
+
+#submit-btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.clock {
+    position: relative;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.arrow {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+}
+
+.hour-arrow {
+    height: 6px;
+    width: 35%;
+    background: black;
+}
+
+.minute-arrow {
+    height: 6px;
+    width: 45%;
+    background: grey;
+}
+
+.second-arrow {
+    height: 6px;
+    width: 50%;
+    background: blue;
+}
+
+.number {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+
+.number-1  { transform: rotate(300deg) translate(120px) rotate(-300deg);  } 
+.number-2  { transform: rotate(330deg) translate(120px) rotate(-330deg);  }
+.number-3  { transform: rotate(360deg) translate(120px) rotate(-3600deg);  } 
+.number-4  { transform: rotate(30deg) translate(120px) rotate(-30deg); }
+.number-5  { transform: rotate(60deg) translate(120px) rotate(-60deg); }
+.number-6  { transform: rotate(90deg) translate(120px) rotate(-90deg); }  
+.number-7  { transform: rotate(120deg) translate(120px) rotate(-120deg); }
+.number-8  { transform: rotate(150deg) translate(120px) rotate(-150deg); }
+.number-9  { transform: rotate(180deg) translate(120px) rotate(-180deg); } 
+.number-10 { transform: rotate(210deg) translate(120px) rotate(-210deg); }
+.number-11 { transform: rotate(240deg) translate(120px) rotate(-240deg); }
+.number-12 { transform: rotate(270deg) translate(120px) rotate(-270deg);    }
