@@ -43,11 +43,22 @@ async function arrowRun() {
 setInterval(arrowRun, 1000);
 
 document.getElementById('submit-btn').addEventListener('click', async function() {
-    const city = document.getElementById('city-input').value;
-    if (!city) {
-        alert('Введите название локацию верно');
+    const input = document.getElementById('city-input').value.trim();
+    if (!input || !input.includes('/') ) {
+        alert('Введите локацию в формате: Region/City\nНапример: Europe/Moscow');
         return;
     }
-    apiTime = await getTime(city);
+    const [region, city] = input.split("/")
+    if(!region || !city) {
+        alert('Неверный формат. Введите Region/City\nПример: Europe/Moscow');
+        return;
+    };
+
+    if(city+region) {
+        alert('Неверный формат. Введите Region/City\nПример: Europe/Moscow');
+        return;
+    }
+
+    apiTime = await getTime(input);
 });
 
