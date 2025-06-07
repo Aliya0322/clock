@@ -54,11 +54,5 @@ document.getElementById('submit-btn').addEventListener('click', async function()
         return;
     };
 
-    if(city+region) {
-        alert('Неверный формат. Введите Region/City\nПример: Europe/Moscow');
-        return;
-    }
-
     apiTime = await getTime(input);
 });
-
